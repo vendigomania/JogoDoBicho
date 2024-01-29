@@ -42,7 +42,7 @@ public class AppStartup : MonoBehaviour
             yield return new WaitUntil(() => result.IsCompleted);
 
             //Get data
-            url = Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.GetValue("aman").StringValue;
+            url = Firebase.RemoteConfig.FirebaseRemoteConfig.DefaultInstance.GetValue("asit").StringValue;
 
             var res = GetRedirectedUrlInfoAsync(new Uri(url));
             float delay = 9f;
