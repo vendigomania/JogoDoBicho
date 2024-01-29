@@ -1553,6 +1553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022891e1ef28c2f4e88227c4eed426f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statusText: {fileID: 82335674}
   startScreen: {fileID: 1003596469}
   playScreen: {fileID: 1897461680}
   cards:
