@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "802990979053",
+    "project_id": "jogodo-99132",
+    "storage_bucket": "jogodo-99132.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802990979053:android:0a8e2abd130ff94dd419e4",
+        "android_client_info": {
+          "package_name": "com.jogo.deebiicho"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRmxsto9cypK0BhjDnp1yvCRLpXNeNHhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

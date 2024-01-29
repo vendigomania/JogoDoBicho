@@ -1,0 +1,21 @@
+Название: "Jogo do Bicho"
+
+Имя пакета: "com.jogo.deebiicho", "com.jogo.deebiicho.huawei", "com.jogo.deebiicho.mi"
+
+Firebase remote config: "asit"
+
+Для Google (AAB): SDK AppMetrica и пуш уведомления Firebase.
+
+Для Xiaomi и Huawei (APK): SDK Appsflyer, Facebook SDK и пуш уведомления Firebase.
+
+AppMetrica API Key: 6d9f53fc-5ec7-41ee-bb42-2190034eb355
+
+Dev Key AppsFlyer: tkkocuxCamCP48vd3nutLV
+
+Huawei Facebook App ID: 899890048462619
+
+Xiaomi Facebook App ID: 899367341985035
+
+
+
+
