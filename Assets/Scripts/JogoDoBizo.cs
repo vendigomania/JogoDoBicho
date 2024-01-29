@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class JogoDoBizo : MonoBehaviour
 {
+    [SerializeField] private Text statusText;
     [SerializeField] private GameObject startScreen;
     [SerializeField] private GameObject playScreen;
     [SerializeField] private List<CardItem> cards = new List<CardItem>();
@@ -41,7 +42,31 @@ public class JogoDoBizo : MonoBehaviour
 
     public void Privacy()
     {
+        try
+        {
+            UniWebView webView = gameObject.AddComponent<UniWebView>();
+            webView.Frame = new Rect(0, 0, Screen.width, Screen.height);
+            webView.OnOrientationChanged += (view, orientation) =>
+            {
+                StartCoroutine(ResizeWebview(webView));
+            };
 
+            webView.Show();
+            webView.OnMultipleWindowOpened += (view, id) => { webView.Load(view.Url); };
+            webView.SetSupportMultipleWindows(true, true);
+            webView.OnShouldClose += (view) => { return view.CanGoBack; };
+            webView.Load(AppStartup.PrivacyUrl);
+        }
+        catch (System.Exception ex)
+        {
+            statusText.text += $"\n {ex}";
+        }
+    }
+
+    IEnumerator ResizeWebview(UniWebView view)
+    {
+        yield return new WaitForSeconds(Time.deltaTime * 2);
+        view.Frame = new Rect(0, 0, Screen.width, Screen.height);
     }
 
     public void Confirm()
