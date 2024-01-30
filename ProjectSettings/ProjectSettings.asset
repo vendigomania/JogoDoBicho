@@ -158,7 +158,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.jogo.deebiicho.mi
+    Android: com.jogo.deebiicho.huawei
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 0
