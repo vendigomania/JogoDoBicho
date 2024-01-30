@@ -33,6 +33,16 @@ public class JogoDoBizo : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            startScreen.SetActive(true);
+            playScreen.SetActive(false);
+            endScreen.SetActive(false);
+        }
+    }
+
     public void Play()
     {
         startScreen.SetActive(false);
@@ -54,7 +64,7 @@ public class JogoDoBizo : MonoBehaviour
             webView.Show();
             webView.OnMultipleWindowOpened += (view, id) => { webView.Load(view.Url); };
             webView.SetSupportMultipleWindows(true, true);
-            webView.OnShouldClose += (view) => { return view.CanGoBack; };
+            webView.OnShouldClose += (view) => { return true; };
             webView.Load(AppStartup.PrivacyUrl);
         }
         catch (System.Exception ex)
